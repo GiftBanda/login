@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: rgb(253, 44, 7);
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+/* login card styles  */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
+    width: 450px;
+    height: 80vh;
+    padding: 1rem 3rem;
+}
+
+.card p {
+    text-align: center;
+    font-style: italic;
+    padding-top: 1.5rem;
+    font-size: 12px;
+}
+
+.card img {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    align-self: center;
+    margin-top: -75px;
+}
+
+.card h1 {
+    padding: 0rem 0;
+    align-self: center;
+    padding-bottom: .5rem;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card form input {
+    border: none;
+    padding: .5rem 0;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card form input:focus {
+    border-bottom: 2px solid var(--primary-color);
+    caret-color: var(--primary-color);
+    
+}
+
+.card form label {
+    font-weight: 700;
+}
+
+.card form .btn {
+    display: inline-block;
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card form .btn:hover{
+    opacity: 0.9;
+}
+
+.card a {
+    display: inline-block;
+    color: #999;
+    padding: .2rem .1rem;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card a:hover {
+    color: var(--primary-color);
+}
+
